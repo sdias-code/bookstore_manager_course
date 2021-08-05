@@ -1,8 +1,11 @@
-# Curso Udemy
-## Comece a aprender Spring Boot agora de forma prática!
-### Instrutor: Rodrigo Peleias
+# Treinamento CleanCode2021.h1
+
+## Api-web com Spring Boot e Swagger
+
+### Professor: Waldemar Maldonado
 
 #### O que eu aprendi:
+
 1 - Desenvolver uma API REST com o Spring Boot.
 
 2 - Preparar o setup de ambiente de desenvolvimento para projetos Java de forma simples e rápida.
@@ -11,6 +14,8 @@
 
 4 - Disponibilizar o projeto para uso na nuvem através do Heroku, de forma simples e gratuita!
 
+5 - Implementar a documentação utilizando Swagger
+
 ### Como usar:
 git clone https://github.com/sdias-code/bookstore_manager_course.git
 
@@ -18,33 +23,25 @@ git clone https://github.com/sdias-code/bookstore_manager_course.git
 Execute o projeto no terminal, digite o seguinte comando:
 mvn spring-boot:run
 
-### Inserindo dados:
-Usar aplicativo Postman
-Método Post(local)
-http://localhost:8080/api/v1/books
+### Testando app na nuvem:
+Inserindo dados -- Utilizar Swagger
+https://meuapp-bookmanager.herokuapp.com/swagger-ui.html
 
+### Inserindo dados:
 Entrada de Dados: JASON
 
  `{
-"name": "Investidor Inteligente",
-"pages": 200,
-"chapters": 20,
-"isbn": "0-596-52068-9",
-"publisherName": "Harper Collins",
-"author": {
-"name": "Benjamin Grahan",
-"age": 100
-}
+  "author": {
+    "age": 25,    
+    "name": "Silvio Dias"
+  },
+  "chapters": 28,  
+  "isbn": "0-596-52068-9",
+  "name": "Aprendendo Java com Wmaldonado",
+  "pages": 250,
+  "publisherName": "Waldemar Maldonado"
 }`
 
-### Consulta dos dados inseridos:
-consulta por id
-Método GET (local)
-http://localhost:8080/api/v1/books/1
 
-### Testando app na nuvem:
-Inserindo dados -- Método Post
-https://meuapp-bookmanager.herokuapp.com/api/v1/books
- 
-Lendo dados inseridos -- Método GET
-https://meuapp-bookmanager.herokuapp.com/api/v1/books/1
+
+
